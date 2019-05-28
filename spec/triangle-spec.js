@@ -8,7 +8,6 @@ describe('Triangle', function() {
   });
   it('should correctly determine whether 3 lengths make up a triangle', function() {
     var notTriangle = new Triangle(3,9,22);
-    console.log(notTriangle);
     expect(notTriangle.checkType()).toEqual("These values do not make up a triangle");
   });
   it('should correctly determine whether 3 sides make up an equilateral triangle', function() {
