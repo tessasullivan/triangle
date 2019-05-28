@@ -2,7 +2,7 @@ import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { triangle } from './triangle';
+import { triangle } from './triangle.js';
 
 $(document).ready(function() {
   $("form#triangle").submit(function(event) {
