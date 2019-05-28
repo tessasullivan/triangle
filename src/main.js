@@ -10,12 +10,13 @@ $(document).ready(function() {
     var sideB = parseInt($("#sideB").val());
     var sideC = parseInt($("#sideC").val());
     if (sideA && sideB && sideC) {
-      var outputString = Triangle(sideA, sideB, sideC);
+      var triangle = new Triangle(sideA, sideB, sideC);
+      var result = triangle.checkType();
     } else {
       //User left a field blank
       alert("Please enter values for all 3 sides.");
     }
-    $("#output").text(outputString);
+    $("#output").text(result);
     event.preventDefault();
   });
 });
