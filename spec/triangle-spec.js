@@ -11,4 +11,12 @@ describe('Triangle', function() {
     console.log(notTriangle);
     expect(notTriangle.checkType()).toEqual("These values do not make up a triangle");
   });
+  it('should correctly determine whether 3 sides make up an equilateral triangle', function() {
+    var eqTriangle = new Triangle(5,5,5);
+    expect(eqTriangle.checkType()).toEqual("This is an equilatoral triangle.");
+  });
+  it('should correctly determine whether 3 sides make up a isosceles triangle', function() {
+    var eqTriangle = new Triangle(5,5,9);
+    expect(eqTriangle.checkType()).toEqual("This is an isosceles triangle.");
+  });
 });
