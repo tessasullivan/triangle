@@ -12,6 +12,8 @@ Triangle.prototype.checkType = function() {
     outputString = "This is an equilatoral triangle.";
   } else if (this.sideA === this.sideB || this.sideA === this.sideC || this.sideB === this.sideC){
     outputString = "This is an isosceles triangle.";
+  } else {
+    outputString = "This is a scalene triangle.";
   }
   return outputString;
 }

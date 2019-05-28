@@ -14,8 +14,12 @@ describe('Triangle', function() {
     var eqTriangle = new Triangle(5,5,5);
     expect(eqTriangle.checkType()).toEqual("This is an equilatoral triangle.");
   });
-  it('should correctly determine whether 3 sides make up a isosceles triangle', function() {
+  it('should correctly determine whether 3 sides make up an isosceles triangle', function() {
     var eqTriangle = new Triangle(5,5,9);
     expect(eqTriangle.checkType()).toEqual("This is an isosceles triangle.");
+  });
+  it('should correctly determine whether 3 sides make up a scalene triangle', function() {
+    var eqTriangle = new Triangle(3,4,5);
+    expect(eqTriangle.checkType()).toEqual("This is a scalene triangle.");
   });
 });
