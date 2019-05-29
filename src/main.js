@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Triangle } from './triangle.js';
 
 $(document).ready(function() {
-  $("form#triangle").submit(function(event) {
+  $("form#triangle").click(function() {
     var sideA = parseInt($("#sideA").val());
     var sideB = parseInt($("#sideB").val());
     var sideC = parseInt($("#sideC").val());
@@ -17,6 +17,5 @@ $(document).ready(function() {
       alert("Please enter values for all 3 sides.");
     }
     $("#output").text(result);
-    event.preventDefault();
   });
 });

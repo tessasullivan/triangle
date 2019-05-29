@@ -18,11 +18,11 @@
 //   return outputString;
 // }
 
-class Triangle {
+export class Triangle {
   constructor(sideA, sideB, sideC) {
-  this.sideA = sideA;
-  this.sideB = sideB;
-  this.sideC = sideC;
+    this.sideA = sideA;
+    this.sideB = sideB;
+    this.sideC = sideC;
   }
   checkType() {
     var outputString;
